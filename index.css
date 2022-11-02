@@ -1,0 +1,94 @@
+*{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+}
+.outer-nav{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        background-color: rgb(52, 158, 75);
+        padding: 30px;
+        position: relative;
+
+}
+label{
+        font-weight: bolder;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        cursor: pointer;
+        color: rgb(235, 227, 227);
+}
+
+.nav-links {
+        display: none;
+        gap:25px;
+        list-style: none;
+        text-transform: capitalize;
+        font-size: 25px;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(52, 158, 75);
+        padding: 15px;
+        text-align: center;
+        overflow: hidden;
+        
+        
+}
+.nav-links  li a{
+        color: bisque;
+        text-decoration: none;
+        transition: all 0.5s ease;
+}
+ul li a:hover{
+        color: brown;
+}
+.nav-links .sign-up-btn{
+        background-color: rgb(253, 0, 42);
+         padding: 5px 10px; 
+        border-radius: 2rem;
+        display: block;
+}
+.flex{
+        display: flex;
+}
+
+.span-toggle{
+        display: flex;
+        gap: 3px;
+        flex-direction: column;
+        cursor: pointer;
+
+}
+.span-toggle span{
+        display: block;
+        background-color: black;
+        padding: 2px;
+        width: 25px;
+}
+
+@media screen and (min-width: 578px){
+        .span-toggle{
+                display: none;
+
+        }
+        .nav-links{
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                background-color: transparent;
+
+        }
+        label{
+                
+                font-size: 30px;
+        }
+
+       
+}
